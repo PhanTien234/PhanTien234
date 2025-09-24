@@ -8,7 +8,7 @@
 
 - 🔭 I’m interested in coding at **ASP dotnet programming**
 
-- 🌱 I’m currently learning **ASP.NET Core,C# and ReactJS**
+- 🌱 I’m currently **have 2+ years experiences in .NET Core Framework( C#) and learning ReactJS**
 
 - ❤️ I’m looking to collaborate on **...**
 
