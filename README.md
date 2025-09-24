@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Tien(Hubert)</h1>
-<h3 align="center">A passionate backend developer from Vietnam</h3>
+<h3 align="center">A passionate web developer from Vietnam</h3>
 <img align="right" alt="Coding" width="400" height="500" src="https://i.gifer.com/origin/79/7985957fb0dcdfb174f97ee0bb7a5159_w200.gif">
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=phantien234&label=Profile%20views&color=0e75b6&style=flat" alt="phantien234" /> </p>
