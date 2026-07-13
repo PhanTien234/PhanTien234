@@ -44,7 +44,7 @@
 Use the image generation tool with this exact direction:
 
 ```text
-Create one ultra-wide 3.33:1 cinematic banner for a professional full-stack software developer's GitHub profile. Deep navy-black outer-space environment, luminous blue spiral galaxy on the right, subtle cyan nebula and tiny stars across the background, a distant developer silhouette standing on a minimal geometric platform near the lower-right, elegant electric-blue and restrained violet highlights, tiny emerald accents, premium high-end technology aesthetic, strong depth, crisp detail, calm and professional, ample dark negative space through the left and center so GitHub headings remain visually readable below the image. No words, no letters, no numbers, no logos, no badges, no UI cards, no watermark, no border. Output at least 1600 x 480 pixels as a PNG.
+Create one ultra-wide 3:1 cinematic banner for a professional full-stack software developer's GitHub profile. Deep navy-black outer-space environment, luminous blue spiral galaxy on the right, subtle cyan nebula and tiny stars across the background, a distant developer silhouette standing on a minimal geometric platform near the lower-right, elegant electric-blue and restrained violet highlights, tiny emerald accents, premium high-end technology aesthetic, strong depth, crisp detail, calm and professional, ample dark negative space through the left and center so GitHub headings remain visually readable below the image. No words, no letters, no numbers, no logos, no badges, no UI cards, no watermark, no border. Output at 1536 x 512 pixels as a PNG.
 ```
 
 Save the returned image as `assets/github-profile-banner.png` without recompressing it into JPEG.
@@ -66,11 +66,11 @@ Run:
 
 ```powershell
 $python = 'C:/Users/minht/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe'
-$code = 'from PIL import Image; import sys; im=Image.open(sys.argv[1]); assert im.format==chr(80)+chr(78)+chr(71); assert im.width>=1600 and im.height>=480; assert 3.0 <= im.width/im.height <= 3.6; print(im.format, im.size)'
+$code = 'from PIL import Image; import sys; im=Image.open(sys.argv[1]); assert im.format==chr(80)+chr(78)+chr(71); assert im.width>=1536 and im.height>=512; assert 2.9 <= im.width/im.height <= 3.1; print(im.format, im.size)'
 & $python -c $code 'assets/github-profile-banner.png'
 ```
 
-Expected: output starts with `PNG`, reports at least `(1600, 480)`, and exits 0.
+Expected: output starts with `PNG`, reports `(1536, 512)`, and exits 0.
 
 - [ ] **Step 4: Commit the hero asset**
 
@@ -395,7 +395,7 @@ Run:
 
 ```powershell
 $python = 'C:/Users/minht/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe'
-$code = 'from PIL import Image; import sys; im=Image.open(sys.argv[1]); assert im.format==chr(80)+chr(78)+chr(71); assert im.width>=1600 and im.height>=480; print(im.format, im.size)'
+$code = 'from PIL import Image; import sys; im=Image.open(sys.argv[1]); assert im.format==chr(80)+chr(78)+chr(71); assert im.width>=1536 and im.height>=512; assert 2.9 <= im.width/im.height <= 3.1; print(im.format, im.size)'
 & $python -c $code 'assets/github-profile-banner.png'
 
 $urls = @(
