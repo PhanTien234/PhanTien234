@@ -12,7 +12,6 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Da%20Nang-Vietnam-0A66C2?style=flat-square&logo=googlemaps&logoColor=white" alt="Da Nang, Vietnam" />
   <img src="https://img.shields.io/badge/Experience-3.5%2B%20years-238636?style=flat-square" alt="3.5+ years of experience" />
-  <a href="https://phan-tien234.vercel.app"><img src="https://img.shields.io/badge/Portfolio-Visit-7C3AED?style=flat-square&logo=vercel&logoColor=white" alt="Portfolio" /></a>
   <img src="https://komarev.com/ghpvc/?username=PhanTien234&label=Profile%20views&color=0e75b6&style=flat-square" alt="PhanTien234 profile views" />
 </p>
 
