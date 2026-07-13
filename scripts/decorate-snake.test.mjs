@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import { existsSync } from "node:fs";
+import { readFile } from "node:fs/promises";
 import test from "node:test";
 
 const decoratorUrl = new URL("./decorate-snake.mjs", import.meta.url);
@@ -76,5 +77,50 @@ test("rejects unsupported or already-decorated SVG input", async () => {
   assert.throws(
     () => decorateSnakeSvg(decorated),
     /already decorated/,
+  );
+});
+
+test("workflow decorates both generated SVGs before publishing", async () => {
+  const workflow = await readFile(
+    new URL("../.github/workflows/main.yml", import.meta.url),
+    "utf8",
+  );
+
+  const checkoutIndex = workflow.indexOf("uses: actions/checkout@v4");
+  const generateIndex = workflow.indexOf("uses: Platane/snk/svg-only@v3");
+  const decorateIndex = workflow.indexOf("node scripts/decorate-snake.mjs");
+  const publishIndex = workflow.indexOf("uses: peaceiris/actions-gh-pages@v4");
+
+  for (const [name, index] of [
+    ["checkout", checkoutIndex],
+    ["generate", generateIndex],
+    ["decorate", decorateIndex],
+    ["publish", publishIndex],
+  ]) {
+    assert.ok(index >= 0, `missing ${name} workflow step`);
+  }
+
+  assert.ok(checkoutIndex < generateIndex);
+  assert.ok(generateIndex < decorateIndex);
+  assert.ok(decorateIndex < publishIndex);
+
+  const decorationBlock = workflow.slice(decorateIndex, publishIndex);
+  assert.ok(decorationBlock.includes("dist/github-contribution-grid-snake.svg"));
+  assert.ok(
+    decorationBlock.includes(
+      "dist/github-contribution-grid-snake-dark.svg",
+    ),
+  );
+});
+
+test("README describes the Neon Galaxy rainbow snake", async () => {
+  const readme = await readFile(
+    new URL("../README.md", import.meta.url),
+    "utf8",
+  );
+
+  assert.match(
+    readme,
+    /alt="Animated Neon Galaxy rainbow snake eating PhanTien234's GitHub contributions"/,
   );
 });
