@@ -90,9 +90,9 @@ I integrate AI assistants into real engineering workflows: legacy-code analysis,
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/PhanTien234/PhanTien234/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/PhanTien234/PhanTien234/output/github-contribution-grid-snake.svg" />
-    <img alt="Animated Neon Galaxy rainbow snake eating PhanTien234's GitHub contributions" src="https://raw.githubusercontent.com/PhanTien234/PhanTien234/output/github-contribution-grid-snake.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/PhanTien234/PhanTien234/output/github-contribution-grid-snake-dark.svg?v=neon-galaxy-1" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/PhanTien234/PhanTien234/output/github-contribution-grid-snake.svg?v=neon-galaxy-1" />
+    <img alt="Animated Neon Galaxy rainbow snake eating PhanTien234's GitHub contributions" src="https://raw.githubusercontent.com/PhanTien234/PhanTien234/output/github-contribution-grid-snake.svg?v=neon-galaxy-1" />
   </picture>
 </div>
 

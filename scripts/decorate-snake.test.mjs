@@ -124,3 +124,15 @@ test("README describes the Neon Galaxy rainbow snake", async () => {
     /alt="Animated Neon Galaxy rainbow snake eating PhanTien234's GitHub contributions"/,
   );
 });
+
+test("README versions every snake asset to invalidate stale caches", async () => {
+  const readme = await readFile(
+    new URL("../README.md", import.meta.url),
+    "utf8",
+  );
+
+  assert.equal(
+    (readme.match(/\?v=neon-galaxy-1/g) ?? []).length,
+    3,
+  );
+});
