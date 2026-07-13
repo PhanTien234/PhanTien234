@@ -83,8 +83,8 @@ I integrate AI assistants into real engineering workflows: legacy-code analysis,
 ## GitHub Activity
 
 <p align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=PhanTien234&show_icons=true&include_all_commits=true&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=39D353&text_color=C9D1D9" alt="PhanTien234 GitHub statistics" />
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs?username=PhanTien234&layout=compact&langs_count=8&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9" alt="PhanTien234 most used languages" />
+  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=PhanTien234&theme=github_dark" alt="PhanTien234 GitHub statistics" />
+  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=PhanTien234&theme=github_dark" alt="PhanTien234 repositories per language" />
 </p>
 
 ## Contribution Snake
