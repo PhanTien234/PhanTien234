@@ -416,8 +416,8 @@ jobs:
 
       - name: Add Neon Galaxy rainbow styling
         run: |
-          node scripts/decorate-snake.mjs `\
-            dist/github-contribution-grid-snake.svg `\
+          node scripts/decorate-snake.mjs \
+            dist/github-contribution-grid-snake.svg \
             dist/github-contribution-grid-snake-dark.svg
 
       - name: Publish snake assets to output branch
